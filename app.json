@@ -1,0 +1,14 @@
+{
+      "pages": [
+            "pages/main/main",
+            "pages/logs/logs"
+            
+      ],
+      "window": {
+            "backgroundTextStyle": "light",
+            "navigationBarBackgroundColor": "#fff",
+            "navigationBarTitleText": "人文小猎人",
+            "navigationBarTextStyle": "black",
+            "enablePullDownRefresh":true
+      }
+}

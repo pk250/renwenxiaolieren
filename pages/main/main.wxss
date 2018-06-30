@@ -1,0 +1,162 @@
+/* pages/main/main.wxss */
+.mpage {
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  background-color: #e7eaef;
+}
+.withAnimate {
+  transition: all 300ms ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
+.search {
+  background: grey;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+.search .avatar {
+  padding: 30rpx;
+}
+.search .avatar image {
+  width: 50rpx;
+	height: 50rpx;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 60rpx;
+  border-bottom: 20rpx solid #dbdbdb;
+}
+.item image {
+  height: 150rpx;
+  width: 150rpx;
+}
+.user {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #e7eaef;
+  border-right: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
+.user .user-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: cadetblue;
+}
+.user .user-box .user-face-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: grey;
+  padding: 20rpx;
+  margin-bottom: 100rpx;
+}
+.user .user-box .user-face {
+  width: 150rpx;
+	height: 150rpx;
+}
+.user .user-box .one-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  background: lightgray;
+  color: white;
+  font-size: 38rpx;
+}
+.searchInput{
+      margin: 1% 4% 1%;
+      border: 6rpx ridge white;
+      
+}
+.iconGos{
+      width: 100%;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      margin: 2% 1% 1%;
+      font-family: 微软雅黑,宋体;
+      font-size: 14px;
+      color: #7999ac;
+}
+.iconGo{
+      width: 19%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 1% 1% 1%;
+      text-align: center;
+      align-items: center;
+}
+.ico{
+      width: 70%;
+      height: 45px;
+      border-radius: 50%;
+}
+.hot{
+      width: 90%;
+      height: 220px;
+      border: 3rpx solid grey; 
+      margin: 2% 1% 1%;
+}
+.tubiao{
+      width: 16px;
+      height: 16px;
+}
+.isLike{
+      float: right;
+      margin: 10px 20px 1px;
+}
+.userIcon{
+      width: 40px;
+      height: 40px;
+}
+.title{
+      font-size:22px;
+      font-family: 黑体;
+      font-style: italic;
+}
+.content{
+      color: grey;
+      overflow:hidden;
+      text-overflow:ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+}
+.floatIco{
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      bottom: 2px;
+      right: 8px;
+}
+.dinbu{
+      width: 40px;
+      height: 40px;
+}
+.shuaxin{
+      width: 40px;
+      height: 40px;
+}
+      

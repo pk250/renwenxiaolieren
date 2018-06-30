@@ -1,0 +1,100 @@
+<!--pages/main/main.wxml-->
+<view class="mpage {{!ui.tStart? 'withAnimate': ''}}" style="left:{{ui.offsetLeft}}px;width: {{ui.windowWidth}}px" bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" bindtap="handlerPageTap">
+      <scroll-view scroll-y="true" style="height: 100%;" scroll-top="{{scrollTop}}" bindscroll="scroll">
+            <view class="search">
+                  <view catchtap="handlerAvatarTap" class="avatar">
+                        <image src="{{avatarUrl}}"></image>
+                        <text style='font-size:10px'>{{nickName}}</text>
+                  </view>
+            </view>
+            <input class='searchInput' placeholder='请输入需要搜索的内容' bindconfirm='search'></input>
+            <view class='iconGos'>
+                  <view class='iconGos iconGo'>
+                        <image class='ico' src="../../images/jianzhi.png"></image>
+                        <text>兼职</text>
+                  </view>
+                  <view class='iconGos iconGo'>
+                        <image class='ico' src="../../images/ershou.png"></image>
+                        <text>二手</text>
+                  </view>
+                  <view class='iconGos iconGo'>
+                        <image class='ico' src="../../images/kuaidi.png"></image>
+                        <text>快递</text>
+                  </view>
+                  <view class='iconGos iconGo'>
+                        <image class='ico' src="../../images/liaotian.png"></image>
+                        <text>聊天</text>
+                  </view>
+                  <view class='iconGos iconGo'>
+                        <image class='ico' src="../../images/maimai.png"></image>
+                        <text>买卖</text>
+                  </view>
+            </view>
+            <view class='iconGos'>
+                  <view class='iconGos iconGo'>
+                        <image class='ico' src="../../images/zixun.png"></image>
+                        <text>资讯</text>
+                  </view>
+                  <view class='iconGos iconGo'>
+                        <image class='ico' src="../../images/gonggao.png"></image>
+                        <text>公告</text>
+                  </view>
+                  <view class='iconGos iconGo'>
+                        <image class='ico' src="../../images/kefu.png"></image>
+                        <text>客服</text>
+                  </view>
+                  <view class='iconGos iconGo'>
+                        <image class='ico' src="../../images/cet.png"></image>
+                        <text>四六级</text>
+                  </view>
+                  <view class='iconGos iconGo'>
+                        <image class='ico' src="../../images/more.png"></image>
+                        <text>更多</text>
+                  </view>
+            </view>
+            <view style='align-items:center;display:flex;flex-direction: column;'>
+
+                  <block wx:for="{{numberArray}}" wx:key="*this">
+                        <view class="hot">
+                              <image class='userIcon ico tubiao' src='{{avatarUrl}}'></image>
+                              <text class='title'>出售二手手机</text>
+                              <view style='display:inline;width:90%;height:150px;'>
+                                    <div class='content'>我有一台手机，很旧了，我要卖了它我有一台手机，很旧了，我要卖了它我有一台手机，很旧了，我要卖了它我有一台手机，很旧了，我要卖了它我有一台手机，很旧了，我要卖了它我有一台手机，很旧了，我要卖了它我有一台手机，很旧了，我要卖了它我有一台手机，很旧了，我要卖了它我有一台手机，很旧了，我要卖了它我有一台手机，很旧了，我要卖了它我有一台手机，很旧了，我要卖了它</div>
+                              </view>
+                              <view class='isLike'>
+                                    <image class='note ico tubiao' src="../../images/note.png"></image>
+                                    <text class='noteCount' style='color:grey'>21</text>
+                                    <image class='up ico tubiao' src="../../images/up.png"></image>
+                                    <text class='upCount' style='color:grey'>22</text>
+                                    <image class='down ico tubiao' src="../../images/down.png"></image>
+                                    <text class='downCount' style='color:grey'>11</text>
+                              </view>
+                        </view>
+                  </block>
+            </view>
+      </scroll-view>
+      <view class="floatIco" >
+            <image bindtap='onGoUp' class="dinbu" src="../../images/dinbu.png" ></image>
+            <image bindtap='onGoRefresh' class="shuaxin" src="../../images/shuaxin.png"></image>
+      </view>
+</view>
+<view bindtouchstart="handlerStart" catchtouchmove="handlerMove" bindtouchcancel="handlerCancel" bindtouchend="handlerEnd" class="user" style="width: {{ui.menuWidth}}px">
+      <view style="width: {{ui.menuWidth}}px;left:{{-ui.menuWidth/3 + ui.offsetLeft/3}}px" class="user-box {{!ui.tStart? 'withAnimate': ''}}">
+            <view class="user-face-wrapper">
+                  <image class="user-face" src="{{avatarUrl}}"></image>
+                  <text>{{nickName}}</text>
+            </view>
+            <view class="one-menu">
+                  <text>积分明细</text>
+            </view>
+            <view class="one-menu">
+                  <text>消息通知</text>
+            </view>
+            <view class="one-menu">
+                  <text>我的发布</text>
+            </view>
+            <view class="one-menu">
+                  <text>抢单记录</text>
+            </view>
+      </view>
+</view>
